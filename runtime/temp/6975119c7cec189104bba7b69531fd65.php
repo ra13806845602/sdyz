@@ -1,4 +1,4 @@
-<?php /*a:6:{s:74:"/Applications/MAMP/htdocs/hisiphp/application/stock/view/index/detail.html";i:1589554581;s:69:"/Applications/MAMP/htdocs/hisiphp/application/system/view/layout.html";i:1588348082;s:75:"/Applications/MAMP/htdocs/hisiphp/application/system/view/block/header.html";i:1588348082;s:73:"/Applications/MAMP/htdocs/hisiphp/application/system/view/block/menu.html";i:1588348082;s:74:"/Applications/MAMP/htdocs/hisiphp/application/system/view/block/layui.html";i:1588348082;s:75:"/Applications/MAMP/htdocs/hisiphp/application/system/view/block/footer.html";i:1588348082;}*/ ?>
+<?php /*a:6:{s:74:"/Applications/MAMP/htdocs/hisiphp/application/stock/view/index/detail.html";i:1589554627;s:69:"/Applications/MAMP/htdocs/hisiphp/application/system/view/layout.html";i:1588348082;s:75:"/Applications/MAMP/htdocs/hisiphp/application/system/view/block/header.html";i:1588348082;s:73:"/Applications/MAMP/htdocs/hisiphp/application/system/view/block/menu.html";i:1588348082;s:74:"/Applications/MAMP/htdocs/hisiphp/application/system/view/block/layui.html";i:1588348082;s:75:"/Applications/MAMP/htdocs/hisiphp/application/system/view/block/footer.html";i:1588348082;}*/ ?>
 <?php if(input('param.hisi_iframe') || cookie('hisi_iframe')): ?>
 <!DOCTYPE html>
 <html>
@@ -262,9 +262,6 @@ $ca = strtolower(request()->controller().'/'.request()->action());
 
 <script type="text/javascript" src="/static/js/jquery.2.1.4.min.js"></script>
 <script type="text/javascript">
-    window.onload = function(){
-        search();
-    }
 
     layui.use(['table'], function () {
         var table = layui.table;
@@ -466,9 +463,6 @@ $ca = strtolower(request()->controller().'/'.request()->action());
 
 <script type="text/javascript" src="/static/js/jquery.2.1.4.min.js"></script>
 <script type="text/javascript">
-    window.onload = function(){
-        search();
-    }
 
     layui.use(['table'], function () {
         var table = layui.table;
@@ -677,9 +671,6 @@ $ca = strtolower(request()->controller().'/'.request()->action());
 
 <script type="text/javascript" src="/static/js/jquery.2.1.4.min.js"></script>
 <script type="text/javascript">
-    window.onload = function(){
-        search();
-    }
 
     layui.use(['table'], function () {
         var table = layui.table;
@@ -869,9 +860,6 @@ $ca = strtolower(request()->controller().'/'.request()->action());
 
 <script type="text/javascript" src="/static/js/jquery.2.1.4.min.js"></script>
 <script type="text/javascript">
-    window.onload = function(){
-        search();
-    }
 
     layui.use(['table'], function () {
         var table = layui.table;
