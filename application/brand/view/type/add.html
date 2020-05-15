@@ -1,0 +1,152 @@
+<form class="layui-form" action="{:url()}" method="post" id="editForm">
+    <div class="layui-form-item layui-form-pane">
+        <label class="layui-form-label">编码</label>
+        <div class="layui-input-inline">
+            <input type="text" class="layui-input field-number" id="number" name="number" lay-verify="required"
+                   placeholder="请输入编码">
+        </div>
+    </div>
+
+    <div class="layui-form-item layui-form-pane">
+        <label class="layui-form-label">膜层</label>
+        <div class="layui-input-inline">
+            <select name="film_id" id="film_id" lay-verify="required" lay-filter="class_select">
+                <option value="">请选择膜层</option>
+                {volist name="film_list" id="item"}
+                <option value="{$item.id}">{$item.name}</option>
+                {/volist}
+            </select>
+        </div>
+    </div>
+
+    <div class="layui-form-item layui-form-pane">
+        <label class="layui-form-label">系列</label>
+        <div class="layui-input-inline">
+            <select name="series_id" id="series_id" lay-verify="required" lay-filter="class_select">
+                <option value="">请选择系列</option>
+                {volist name="series_list" id="item"}
+                <option value="{$item.id}">{$item.name}</option>
+                {/volist}
+            </select>
+        </div>
+    </div>
+
+    <div class="layui-form-item layui-form-pane">
+        <label class="layui-form-label">折射率</label>
+        <div class="layui-input-inline">
+            <select name="refraction_id" id="refraction_id" lay-verify="required" lay-filter="class_select">
+                <option value="">请选择折射率</option>
+                {volist name="refraction_list" id="item"}
+                <option value="{$item.id}">{$item.value}</option>
+                {/volist}
+            </select>
+        </div>
+    </div>
+
+    <div class="layui-form-item layui-form-pane">
+        <label class="layui-form-label">度数</label>
+        <div class="layui-input-inline">
+            <select name="degree_id" id="degree_id" lay-verify="required" lay-filter="class_select">
+                <option value="">请选择度数</option>
+                {volist name="degree_list" id="item"}
+                <option value="{$item.id}">{$item.value}</option>
+                {/volist}
+            </select>
+        </div>
+    </div>
+
+
+    <div class="layui-form-item layui-form-pane">
+        <label class="layui-form-label">散光</label>
+        <div class="layui-input-inline">
+            <select name="astigmatism_id" id="astigmatism_id" lay-verify="required" lay-filter="class_select">
+                <option value="">请选择散光</option>
+                {volist name="astigmatism_list" id="item"}
+                <option value="{$item.id}">{$item.value}</option>
+                {/volist}
+            </select>
+        </div>
+    </div>
+
+    <div class="layui-form-item layui-form-pane">
+        <label class="layui-form-label">正/负</label>
+        <div class="layui-input-inline">
+            <input type="radio" class="field-plus" name="plus" value="1" title="正">
+            <input type="radio" class="field-plus" name="plus" value="0" title="负" checked>
+        </div>
+    </div>
+
+    <div class="layui-form-item layui-form-pane">
+        <label class="layui-form-label">球/非球</label>
+        <div class="layui-input-inline">
+            <input type="radio" class="field-ball" name="ball" value="1" title="球">
+            <input type="radio" class="field-ball" name="ball" value="0" title="非球" checked>
+        </div>
+    </div>
+
+    <div class="layui-form-item layui-form-pane">
+        <label class="layui-form-label">左/右眼</label>
+        <div class="layui-input-inline">
+            <input type="radio" class="field-eye" name="eye" value="0" title="无需区分" checked>
+            <input type="radio" class="field-eye" name="eye" value="1" title="左眼">
+            <input type="radio" class="field-eye" name="eye" value="2" title="右眼">
+        </div>
+    </div>
+
+    <div class="layui-form-item layui-form-pane">
+        <label class="layui-form-label">状态</label>
+        <div class="layui-input-inline">
+            <input type="radio" class="field-status" name="status" value="1" title="启用" checked>
+            <input type="radio" class="field-status" name="status" value="0" title="禁用">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label"> </label>
+        <div class="layui-input-block">
+            <input type="hidden" class="field-id" name="id">
+            <button class="layui-btn layui-btn-normal" lay-submit lay-filter="formDemo">提交</button>
+            <a href="{:url('index')}" class="layui-btn layui-btn-primary ml10"><i class="aicon ai-fanhui"></i>返回</a>
+        </div>
+    </div>
+</form>
+{include file="system@block/layui" /}
+<script type="text/javascript" src="__PUBLIC_JS__/jquery.2.1.4.min.js"></script>
+<script>
+    window.onload = function () {
+        var oInput = document.getElementById("number");
+        oInput.focus();
+    }
+
+    layui.use(['form', 'jquery', 'layer'], function () {
+        var form = layui.form;
+        var $ = layui.jquery;
+        var layer = layui.layer;
+        form.on('submit(formDemo)', function (data) {
+            console.log(123456);
+            console.log(JSON.stringify(data.field));
+            $.ajax({
+                type: "POST",
+                url: "{:url('')}",
+                data: data.field,
+                dataType: "json",
+                success: function (data) {
+                    console.log(data);
+                    if (data.code == 1) {
+                        console.log(data);
+                        layer.msg(data.msg, {time: 2000});
+                        $("#number").val("");
+                        var oInput = document.getElementById("number");
+                        oInput.focus();
+                        var degree_value = $("#degree_id option:selected").val();
+                        degree_value++;
+                        var select = 'dd[lay-value=' + degree_value + ']';
+                        $('#degree_id').siblings("div.layui-form-select").find('dl').find(select).click();
+                    } else {
+                        layer.msg(data.msg, {time: 2000});
+                    }
+                }
+            });
+            return false;
+        });
+    });
+</script>

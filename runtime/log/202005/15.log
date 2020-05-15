@@ -1,0 +1,16 @@
+---------------------------------------------------------------
+
+[2020-05-15T22:24:01+08:00] ::1 GET localhost:8888/admin.php/stock/index/detail.html?page=1&limit=20&series_id=3&refraction_id=5&film_id=2&ball=0
+[ error ] [2]A non-numeric value encountered
+---------------------------------------------------------------
+
+[2020-05-15T22:24:07+08:00] ::1 GET localhost:8888/admin.php/stock/index/detail.html?page=1&limit=20&series_id=3&refraction_id=5&film_id=2&ball=0
+[ error ] [2]A non-numeric value encountered
+---------------------------------------------------------------
+
+[2020-05-15T22:27:22+08:00] ::1 GET localhost:8888/admin.php/stock/index/detail.html
+[ error ] [0]语法解析错误: syntax error, unexpected ':'
+---------------------------------------------------------------
+
+[2020-05-15T22:27:31+08:00] ::1 GET localhost:8888/admin.php/stock/index/detail.html
+[ error ] [0]语法解析错误: syntax error, unexpected ':'

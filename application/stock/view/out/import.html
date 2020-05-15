@@ -1,0 +1,52 @@
+<form class="layui-form">
+    <div class="layui-form-item layui-form-pane">
+        <label class="layui-form-label">编码</label>
+        <div class="layui-input-inline">
+            <input type="text" class="layui-input field-number" id="number" name="number" lay-verify="required"
+                   placeholder="请输入编码">
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label"></label>
+        <div class="layui-input-block">
+            <button class="layui-btn layui-btn-normal" lay-submit lay-filter="formDemo">提交</button>
+            <a href="{:url('index')}" class="layui-btn layui-btn-primary ml10"><i class="aicon ai-fanhui"></i>返回</a>
+        </div>
+    </div>
+</form>
+{include file="system@block/layui" /}
+<script>
+    window.onload = function () {
+        var oInput = document.getElementById("number");
+        oInput.focus();
+        console.log(123456);
+    }
+
+    layui.use(['form', 'jquery', 'layer'], function () {
+        var form = layui.form;
+        var $ = layui.jquery;
+        var layer = layui.layer;
+        form.on('submit(formDemo)', function (data) {
+            console.log(123456);
+            console.log(JSON.stringify(data.field));
+            $.ajax({
+                type: "POST",
+                url: "{:url('import')}",
+                data: data.field,
+                dataType: "json",
+                success: function (data) {
+                    console.log(data);
+                    if (data.code == 1) {
+                        console.log(data);
+                        layer.msg(data.msg, {time: 2000});
+                        location.reload();
+                    } else {
+                        layer.msg(data.msg, {time: 2000});
+                    }
+                }
+            });
+            return false;
+        });
+    });
+</script>

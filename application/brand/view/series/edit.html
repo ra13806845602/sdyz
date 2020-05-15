@@ -1,0 +1,44 @@
+<form class="layui-form" action="{:url()}" method="post" id="editForm">
+    <div class="layui-form-item layui-form-pane">
+        <label class="layui-form-label">系列</label>
+        <div class="layui-input-inline">
+            <input type="text" class="layui-input field-name" name="name" lay-verify="required" placeholder="请输入系列">
+        </div>
+    </div>
+
+    <div class="layui-form-item layui-form-pane" style="position: relative;z-index: 10000;">
+        <label class="layui-form-label">品牌</label>
+        <div class="layui-input-inline">
+            <select name="brand_id" id="brand_id" lay-verify="required">
+                <option value="">请选择品牌</option>
+                {volist name="brand_list" id="item"}
+                <option value="{$item.id}" {if $item.id==$formData.brand_id}selected{/if}>{$item.brand_name}</option>
+                {/volist}
+            </select>
+        </div>
+    </div>
+
+    <div class="layui-form-item layui-form-pane">
+        <label class="layui-form-label">状态</label>
+        <div class="layui-input-inline">
+            <input type="radio" class="field-status" name="status" value="1" title="启用" checked>
+            <input type="radio" class="field-status" name="status" value="0" title="禁用">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label"> </label>
+        <div class="layui-input-block">
+            <input type="hidden" class="field-id" name="id">
+            <button type="submit" class="layui-btn layui-btn-normal" lay-submit="" lay-filter="formSubmit">提交</button>
+            <a href="{:url('index')}" class="layui-btn layui-btn-primary ml10"><i class="aicon ai-fanhui"></i>返回</a>
+        </div>
+    </div>
+</form>
+{include file="system@block/layui" /}
+<script>
+    layui.use(['upload', 'func'], function () {
+        var $ = layui.jquery, layer = layui.layer, upload = layui.upload, func = layui.func, form = layui.form;
+        var formSelects = layui.formSelects;
+        // 编辑模式下表单自动赋值
+        func.assign({:json_encode($formData)});});
+</script>

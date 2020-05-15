@@ -1,0 +1,28 @@
+---------------------------------------------------------------
+
+[2020-05-13T11:34:32+08:00] ::1 GET localhost:8888/admin.php/brand/type/index.html
+[ error ] [8]未定义变量: series_list
+---------------------------------------------------------------
+
+[2020-05-13T11:34:39+08:00] ::1 GET localhost:8888/admin.php/brand/type/index.html
+[ error ] [8]未定义变量: series_list
+---------------------------------------------------------------
+
+[2020-05-13T12:05:06+08:00] ::1 GET localhost:8888/admin.php/stock/index/index.html
+[ error ] [2002]SQLSTATE[HY000] [2002] Operation timed out
+---------------------------------------------------------------
+
+[2020-05-13T12:17:13+08:00] ::1 GET localhost:8888/admin.php/stock/index/index.html
+[ error ] [2002]SQLSTATE[HY000] [2002] Operation timed out
+---------------------------------------------------------------
+
+[2020-05-13T12:17:18+08:00] ::1 GET localhost:8888/
+[ error ] [2002]SQLSTATE[HY000] [2002] Operation timed out
+---------------------------------------------------------------
+
+[2020-05-13T12:17:38+08:00] ::1 POST localhost:8888/admin.php/system/publics/index.html
+[ error ] [2002]SQLSTATE[HY000] [2002] Operation timed out
+---------------------------------------------------------------
+
+[2020-05-13T12:18:50+08:00] ::1 POST localhost:8888/admin.php/system/publics/index.html
+[ error ] [2002]SQLSTATE[HY000] [2002] Operation timed out

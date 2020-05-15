@@ -1,0 +1,142 @@
+---------------------------------------------------------------
+
+[2020-05-06T19:47:25+08:00] 127.0.0.1 POST www.hisi.com/admin.php/system/menu/add.html
+[运行时间：0.416002s] [吞吐率：2.40req/s] [内存消耗：3,508.91kb] [文件加载：123]
+[ error ] [2]file_put_contents(E:\phpStudy\PHPTutorial\WWW\hisiphp\application\品牌管理/menu.php): failed to open stream: No such file or directory[E:\phpStudy\PHPTutorial\WWW\hisiphp\application\system\admin\Menu.php:243]
+[ error ] [2]file_put_contents(E:\phpStudy\PHPTutorial\WWW\hisiphp\application\品牌管理/menu.php): failed to open stream: No such file or directory[E:\phpStudy\PHPTutorial\WWW\hisiphp\application\system\admin\Menu.php:243]
+---------------------------------------------------------------
+
+[2020-05-06T19:47:47+08:00] 127.0.0.1 POST www.hisi.com/admin.php/system/menu/add.html
+[运行时间：0.422843s] [吞吐率：2.36req/s] [内存消耗：3,509.50kb] [文件加载：123]
+[ error ] [2]file_put_contents(E:\phpStudy\PHPTutorial\WWW\hisiphp\application\品牌管理/menu.php): failed to open stream: No such file or directory[E:\phpStudy\PHPTutorial\WWW\hisiphp\application\system\admin\Menu.php:243]
+[ error ] [2]file_put_contents(E:\phpStudy\PHPTutorial\WWW\hisiphp\application\品牌管理/menu.php): failed to open stream: No such file or directory[E:\phpStudy\PHPTutorial\WWW\hisiphp\application\system\admin\Menu.php:243]
+---------------------------------------------------------------
+
+[2020-05-06T20:01:28+08:00] 127.0.0.1 GET www.hisi.com/admin.php/brand/brand/index.html
+[运行时间：0.299703s] [吞吐率：3.34req/s] [内存消耗：3,353.50kb] [文件加载：118]
+[ error ] [8]未定义变量: kk[E:\phpStudy\PHPTutorial\WWW\hisiphp\runtime\temp\fa2f024173bcbbfd935e161ea34fbaee.php:52]
+---------------------------------------------------------------
+
+[2020-05-06T20:01:48+08:00] 127.0.0.1 GET www.hisi.com/admin.php/brand/brand/index.html
+[运行时间：0.264105s] [吞吐率：3.79req/s] [内存消耗：3,353.18kb] [文件加载：118]
+[ error ] [8]未定义变量: kk[E:\phpStudy\PHPTutorial\WWW\hisiphp\runtime\temp\fa2f024173bcbbfd935e161ea34fbaee.php:52]
+---------------------------------------------------------------
+
+[2020-05-06T20:01:53+08:00] 127.0.0.1 GET www.hisi.com/admin.php/brand/brand/index.html
+[运行时间：0.148163s] [吞吐率：6.75req/s] [内存消耗：3,352.66kb] [文件加载：118]
+[ error ] [8]未定义变量: user_id[E:\phpStudy\PHPTutorial\WWW\hisiphp\runtime\temp\fa2f024173bcbbfd935e161ea34fbaee.php:76]
+---------------------------------------------------------------
+
+[2020-05-06T20:10:18+08:00] 127.0.0.1 GET www.hisi.com/admin.php/brand/brand/index.html
+[运行时间：0.072859s] [吞吐率：13.73req/s] [内存消耗：3,209.95kb] [文件加载：113]
+[ error ] [2]Declaration of app\brand\admin\Brand::edit($id) should be compatible with app\system\admin\Admin::edit()[E:\phpStudy\PHPTutorial\WWW\hisiphp\application\brand\admin\Brand.php:11]
+---------------------------------------------------------------
+
+[2020-05-06T20:10:18+08:00] 127.0.0.1 GET www.hisi.com/admin.php/brand/brand/index.html
+[运行时间：0.069392s] [吞吐率：14.41req/s] [内存消耗：3,209.95kb] [文件加载：113]
+[ error ] [2]Declaration of app\brand\admin\Brand::edit($id) should be compatible with app\system\admin\Admin::edit()[E:\phpStudy\PHPTutorial\WWW\hisiphp\application\brand\admin\Brand.php:11]
+---------------------------------------------------------------
+
+[2020-05-06T20:10:19+08:00] 127.0.0.1 GET www.hisi.com/admin.php/brand/brand/index.html
+[运行时间：0.076876s] [吞吐率：13.01req/s] [内存消耗：3,209.98kb] [文件加载：113]
+[ error ] [2]Declaration of app\brand\admin\Brand::edit($id) should be compatible with app\system\admin\Admin::edit()[E:\phpStudy\PHPTutorial\WWW\hisiphp\application\brand\admin\Brand.php:11]
+---------------------------------------------------------------
+
+[2020-05-06T20:10:19+08:00] 127.0.0.1 GET www.hisi.com/admin.php/brand/brand/index.html
+[运行时间：0.363755s] [吞吐率：2.75req/s] [内存消耗：3,209.98kb] [文件加载：113]
+[ error ] [2]Declaration of app\brand\admin\Brand::edit($id) should be compatible with app\system\admin\Admin::edit()[E:\phpStudy\PHPTutorial\WWW\hisiphp\application\brand\admin\Brand.php:11]
+---------------------------------------------------------------
+
+[2020-05-06T20:21:52+08:00] 127.0.0.1 GET www.hisi.com/admin.php/brand/series/add.html
+[运行时间：1.031432s] [吞吐率：0.97req/s] [内存消耗：3,814.18kb] [文件加载：127]
+[ error ] [8]未定义变量: class_list[E:\phpStudy\PHPTutorial\WWW\hisiphp\runtime\temp\1d94ef79280b63c2701a0deb7457161f.php:1107]
+---------------------------------------------------------------
+
+[2020-05-06T20:41:05+08:00] 127.0.0.1 GET www.hisi.com/admin.php/brand/series/index.html?page=1&limit=20
+[运行时间：0.289625s] [吞吐率：3.45req/s] [内存消耗：3,349.46kb] [文件加载：119]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous[E:\phpStudy\PHPTutorial\WWW\hisiphp\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+
+[2020-05-06T20:42:36+08:00] 127.0.0.1 GET www.hisi.com/admin.php/brand/series/index.html?page=1&limit=20
+[运行时间：0.344245s] [吞吐率：2.90req/s] [内存消耗：3,424.55kb] [文件加载：123]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous[E:\phpStudy\PHPTutorial\WWW\hisiphp\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+
+[2020-05-06T20:42:41+08:00] 127.0.0.1 GET www.hisi.com/admin.php/brand/series/index.html?page=1&limit=20
+[运行时间：0.323314s] [吞吐率：3.09req/s] [内存消耗：3,424.55kb] [文件加载：123]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous[E:\phpStudy\PHPTutorial\WWW\hisiphp\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+
+[2020-05-06T20:42:48+08:00] 127.0.0.1 GET www.hisi.com/admin.php/brand/series/index.html?page=1&limit=20
+[运行时间：0.296024s] [吞吐率：3.38req/s] [内存消耗：3,424.55kb] [文件加载：123]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous[E:\phpStudy\PHPTutorial\WWW\hisiphp\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+
+[2020-05-06T20:44:57+08:00] 127.0.0.1 GET www.hisi.com/admin.php/brand/series/index.html?page=1&limit=20
+[运行时间：0.280264s] [吞吐率：3.57req/s] [内存消耗：3,424.54kb] [文件加载：123]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'brand.brand_id' in 'on clause'[E:\phpStudy\PHPTutorial\WWW\hisiphp\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+
+[2020-05-06T20:45:02+08:00] 127.0.0.1 GET www.hisi.com/admin.php/brand/series/index.html?page=1&limit=20
+[运行时间：0.269016s] [吞吐率：3.72req/s] [内存消耗：3,424.54kb] [文件加载：123]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'brand.brand_id' in 'on clause'[E:\phpStudy\PHPTutorial\WWW\hisiphp\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+
+[2020-05-06T20:49:23+08:00] 127.0.0.1 GET www.hisi.com/admin.php/brand/series/edit.html?id=1&hisi_iframe=yes
+[运行时间：0.424487s] [吞吐率：2.36req/s] [内存消耗：3,465.11kb] [文件加载：121]
+[ error ] [0]模板文件不存在:E:\phpStudy\PHPTutorial\WWW\hisiphp\application\brand\view\series\form.html[E:\phpStudy\PHPTutorial\WWW\hisiphp\thinkphp\library\think\view\driver\Think.php:86]
+---------------------------------------------------------------
+
+[2020-05-06T21:33:35+08:00] 127.0.0.1 GET www.hisi.com/admin.php/brand/type/index.html
+[运行时间：0.082875s] [吞吐率：12.07req/s] [内存消耗：3,103.45kb] [文件加载：108]
+[ error ] [1]Class 'app\brand\admin\Admin' not found[E:\phpStudy\PHPTutorial\WWW\hisiphp\application\brand\admin\Type.php:9]
+---------------------------------------------------------------
+
+[2020-05-06T21:33:45+08:00] 127.0.0.1 GET www.hisi.com/admin.php/brand/type/index.html
+[运行时间：0.085996s] [吞吐率：11.63req/s] [内存消耗：3,207.07kb] [文件加载：113]
+[ error ] [2]Declaration of app\brand\admin\Type::edit($id) should be compatible with app\system\admin\Admin::edit()[E:\phpStudy\PHPTutorial\WWW\hisiphp\application\brand\admin\Type.php:10]
+---------------------------------------------------------------
+
+[2020-05-06T21:37:20+08:00] 127.0.0.1 GET www.hisi.com/admin.php/brand/type/index.html?page=1&limit=20
+[运行时间：0.350481s] [吞吐率：2.85req/s] [内存消耗：3,428.38kb] [文件加载：123]
+[ error ] [2]Illegal offset type[E:\phpStudy\PHPTutorial\WWW\hisiphp\thinkphp\library\think\model\relation\OneToOne.php:66]
+---------------------------------------------------------------
+
+[2020-05-06T21:37:25+08:00] 127.0.0.1 GET www.hisi.com/admin.php/brand/type/index.html?page=1&limit=20
+[运行时间：0.256662s] [吞吐率：3.90req/s] [内存消耗：3,428.38kb] [文件加载：123]
+[ error ] [2]Illegal offset type[E:\phpStudy\PHPTutorial\WWW\hisiphp\thinkphp\library\think\model\relation\OneToOne.php:66]
+---------------------------------------------------------------
+
+[2020-05-06T21:41:33+08:00] 127.0.0.1 GET www.hisi.com/admin.php/brand/type/index.html?page=1&limit=20
+[运行时间：0.275258s] [吞吐率：3.63req/s] [内存消耗：3,428.48kb] [文件加载：123]
+[ error ] [2]Illegal offset type[E:\phpStudy\PHPTutorial\WWW\hisiphp\thinkphp\library\think\model\relation\OneToOne.php:66]
+---------------------------------------------------------------
+
+[2020-05-06T21:42:08+08:00] 127.0.0.1 GET www.hisi.com/admin.php/brand/type/index.html?page=1&limit=20
+[运行时间：0.380795s] [吞吐率：2.63req/s] [内存消耗：3,428.48kb] [文件加载：123]
+[ error ] [2]Illegal offset type[E:\phpStudy\PHPTutorial\WWW\hisiphp\thinkphp\library\think\model\relation\OneToOne.php:66]
+---------------------------------------------------------------
+
+[2020-05-06T21:43:01+08:00] 127.0.0.1 GET www.hisi.com/admin.php/brand/type/index.html?page=1&limit=20
+[运行时间：0.271650s] [吞吐率：3.68req/s] [内存消耗：3,428.48kb] [文件加载：123]
+[ error ] [2]Illegal offset type[E:\phpStudy\PHPTutorial\WWW\hisiphp\thinkphp\library\think\model\relation\OneToOne.php:66]
+---------------------------------------------------------------
+
+[2020-05-06T21:43:33+08:00] 127.0.0.1 GET www.hisi.com/admin.php/brand/type/index.html?page=1&limit=20
+[运行时间：0.197178s] [吞吐率：5.07req/s] [内存消耗：3,428.48kb] [文件加载：123]
+[ error ] [2]Illegal offset type[E:\phpStudy\PHPTutorial\WWW\hisiphp\thinkphp\library\think\model\relation\OneToOne.php:66]
+---------------------------------------------------------------
+
+[2020-05-06T21:57:27+08:00] 127.0.0.1 GET www.hisi.com/admin.php/brand/type/add.html
+[运行时间：0.962599s] [吞吐率：1.04req/s] [内存消耗：3,919.73kb] [文件加载：131]
+[ error ] [8]未定义变量: brand_list[E:\phpStudy\PHPTutorial\WWW\hisiphp\runtime\temp\4ccb5d4045970abbba473539ad4d70ad.php:962]
+---------------------------------------------------------------
+
+[2020-05-06T22:27:44+08:00] 127.0.0.1 GET www.hisi.com/admin.php/brand/type/del.html?id=2
+[运行时间：0.337391s] [吞吐率：2.96req/s] [内存消耗：3,340.14kb] [文件加载：118]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'shidaiyize.sdyz_type' doesn't exist[E:\phpStudy\PHPTutorial\WWW\hisiphp\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+
+[2020-05-06T22:27:56+08:00] 127.0.0.1 GET www.hisi.com/admin.php/brand/type/del.html?id=2
+[运行时间：0.253685s] [吞吐率：3.94req/s] [内存消耗：3,340.82kb] [文件加载：118]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'shidaiyize.sdyz_type' doesn't exist[E:\phpStudy\PHPTutorial\WWW\hisiphp\thinkphp\library\think\db\Connection.php:687]
