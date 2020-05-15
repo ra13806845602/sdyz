@@ -161,7 +161,7 @@ class Index extends Admin
 
     public function detail()
     {
-        //注释更新
+        //注释更新,注释更新,注释更新,注释更新
         if ($this->request->isAjax()) {
             $data = [];
             $series_id = $this->request->param('series_id');
